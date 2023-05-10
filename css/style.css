@@ -44,14 +44,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
-    /* overflow: hidden; */
+    /* padding: 1rem; */
 }
 
 #column1, #column2 {
     flex-grow: 1;
     flex-basis: 0;
-    position: relative;
+    overflow: hidden;
 }
 
 #column1 {
@@ -64,15 +63,14 @@ main {
 }
 
 #column1>img#womanDesktop {
-    position: absolute;
     width: 450px;
-    margin-left: -100px;
+    margin-left: -80px;
 }
 #column1>img#boxDesktop {
-    /* position: absolute; */
-    width: 200px;
-    margin-left: -150px;
-    margin-bottom: -100px;
+    position: absolute;
+    width: 180px;
+    margin-left: -90px;
+    margin-bottom: -95px;
     z-index: 1;
 }
 
@@ -82,9 +80,6 @@ main {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
-
-
 
 
 
