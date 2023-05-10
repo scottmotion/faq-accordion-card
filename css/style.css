@@ -2,8 +2,8 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    letter-spacing: .05rem;
+    font-size: 12px;
+    /* letter-spacing: .05rem; */
 }
 
 body {
@@ -19,12 +19,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: hsl(185, 75%, 39%); */
-    /* background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position-x: -275px, 675px;
-    background-position-y: -525px, 400px; */
-    width: 1440px;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    min-width: 375px;
+    width: 100%;
     height: 720px;
 }
 
