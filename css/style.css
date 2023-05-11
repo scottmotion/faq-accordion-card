@@ -2,7 +2,8 @@
 
 html {
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 400;
     /* letter-spacing: .05rem; */
 }
 
@@ -31,11 +32,10 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: center; */
     max-width: 850px;
     max-height: 500px;
     height: 100%;
-    /* padding: 2rem; */
+    width: 100%;
     background-color: white;
     border-radius: 1.5rem;
 }
@@ -44,7 +44,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 1rem; */
 }
 
 #column1, #column2 {
@@ -75,13 +74,35 @@ main {
 }
 
 .col-header {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
 }
 
-
+details {
+    /* display: flex;
+    flex-direction: column; */
+    margin-right: 6rem;
+    padding: 1rem 1rem 1rem 0;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+details[open] {
+    padding: 1rem 1rem 0 0;
+}
+details[open] summary {
+    font-weight: 700;
+}
+details p {
+    font-size: 12px;
+}
+summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    /* padding: 1rem 0; */
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
