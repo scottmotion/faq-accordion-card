@@ -4,7 +4,6 @@ html {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    /* letter-spacing: .05rem; */
 }
 
 body {
@@ -38,34 +37,42 @@ main {
     width: 100%;
     background-color: white;
     border-radius: 1.5rem;
+    overflow: hidden;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#column1, #column2 {
     flex-grow: 1;
     flex-basis: 0;
     overflow: hidden;
 }
 
+/*****************/
+/* COLUMN 1 LEFT */
+/*****************/
+
 #column1 {
-    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
     align-self: center;
 }
-#column2 {
-    display: flex;
-    align-self: flex-start;
+
+img#patternDesktop {
+    position: relative;
+    width: 800px;
+    left: -425px;
 }
 
-#column1>img#womanDesktop {
+img#womanDesktop {
+    position: absolute;
     width: 450px;
     margin-left: -80px;
 }
-#column1>img#boxDesktop {
+
+img#boxDesktop {
     position: absolute;
     width: 180px;
     margin-left: -90px;
@@ -73,12 +80,23 @@ main {
     z-index: 1;
 }
 
+/******************/
+/* COLUMN 2 RIGHT */
+/******************/
+
+#column2 {
+    align-self: flex-start;
+}
 .col-header {
     font-size: 2.25rem;
     font-weight: 700;
     margin-top: 2em;
     margin-bottom: 0.5em;
 }
+
+/******************/
+/* ACCORDION */
+/******************/
 
 .accordion-wrapper {
     padding-right: 6rem;
@@ -129,13 +147,14 @@ main {
     border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
-
 .panel>p {
     margin: 0;
     padding: 0 0 18px 0;    
 }
 
-
+/******************/
+/* FOOTER */
+/******************/
 
 
 .attribution { font-size: 11px; text-align: center; }
