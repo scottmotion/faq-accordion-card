@@ -38,6 +38,7 @@ main {
     background-color: white;
     border-radius: 1.5rem;
     /* overflow: hidden; */
+    backdrop-filter: invert(1);
 }
 
 .col {
@@ -69,6 +70,7 @@ img#patternDesktop {
     position: relative;
     width: 800px;
     left: -425px;
+    top: 0;
 }
 
 img#womanDesktop {
@@ -95,10 +97,15 @@ img#boxDesktop {
     justify-content: flex-start;
     height: 100%;
     z-index: 2;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.75);
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
-
+    /* padding-left: 1rem;
+    margin-left: -1rem; */
+}
+#column2Wrapper {
+    backdrop-filter: blur(10px);
+    padding-left: 1rem;
 }
 .col-header {
     font-size: 2.25rem;
@@ -112,10 +119,14 @@ img#boxDesktop {
 /******************/
 
 .accordion-wrapper {
-    padding-right: 6rem;
+    max-width: 365px;
+    padding-right: 2rem;
 
 }
 .accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: unset;
     color: #444;
     cursor: pointer;
@@ -145,6 +156,7 @@ img#boxDesktop {
     margin-right: 5px;
     font-size: 24px;
     rotate: -90deg;
+    margin-left: 0.5rem;
 }
 
 .active:after {
@@ -158,6 +170,7 @@ img#boxDesktop {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-right: 1.5rem;
 }
 
 .panel>p {
