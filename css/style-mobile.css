@@ -31,7 +31,7 @@ main {
 
 .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     max-width: 900px;
     max-height: 500px;
@@ -95,14 +95,16 @@ img#boxDesktop {
     height: 100%;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.75);
-    border-top-right-radius: 1.5rem;
+    border-top-right-radius: unset;
     border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 }
 #column2Wrapper {
     backdrop-filter: blur(10px);
     padding: 0 2rem;
 }
 .col-header {
+    text-align: center;
     font-size: 2.25rem;
     font-weight: 700;
     margin-top: 2em;
@@ -114,7 +116,8 @@ img#boxDesktop {
 /******************/
 
 .accordion-wrapper {
-    max-width: 365px;
+    max-width: unset;
+
 }
 .accordion {
     display: flex;
@@ -176,3 +179,4 @@ img#boxDesktop {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
