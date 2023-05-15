@@ -1,54 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
-html {
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: unset;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    background-repeat: no-repeat;
-    max-width: 1440px;
-    min-width: 375px;
-    width: 100%;
-    height: 768px;
-    box-sizing: border-box;
-    padding: 1.5rem;
-}
-
 .card {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     max-width: 900px;
-    max-height: 500px;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    border-radius: 1.5rem;
-    backdrop-filter: invert(1);
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    flex-basis: 0;
-    overflow: hidden;
+    max-height: unset;
 }
 
 /*****************/
@@ -56,33 +9,18 @@ main {
 /*****************/
 
 .imgWrapper {
-    position: absolute;
-    overflow: hidden;
 }
 
 #column1 {
-    align-self: center;
 }
 
 img#patternDesktop {
-    position: relative;
-    width: 800px;
-    left: -425px;
-    top: 0;
 }
 
 img#womanDesktop {
-    position: absolute;
-    width: 450px;
-    left: -80px;
-    top: 225px;
 }
 
 img#boxDesktop {
-    position: absolute;
-    width: 180px;
-    margin-left: -90px;
-    margin-bottom: -95px;
 }
 
 /******************/
@@ -92,13 +30,12 @@ img#boxDesktop {
 #column2 {
     align-self: flex-start;
     justify-content: flex-start;
-    height: 100%;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.75);
     border-top-right-radius: unset;
-    border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
+    flex: auto;
+    flex-basis: content;
 }
+
 #column2Wrapper {
     backdrop-filter: blur(10px);
     padding: 0 2rem;
