@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-* {
-    margin: 0;
+:root {
+    --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
 }
 
-html {
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+* {
+    margin: 0;
 }
 
 body {
@@ -16,18 +14,16 @@ body {
     justify-content: center;
     align-items: center;
     margin: unset;
-    /* background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)); */
-    /* background-repeat: no-repeat; */
     background: linear-gradient(0deg, hsl(240, 73%, 65%) 0%, hsl(273, 75%, 66%) 100%) repeat-x hsl(240, 73%, 65%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    /* background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    background-repeat: no-repeat; */
     min-width: 375px;
     width: 100%;
     min-height: 768px;
@@ -44,91 +40,35 @@ body {
 
 
 .faq__card {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* max-width: 900px;
-    max-height: 500px;
-    height: 100%;
-    width: 100%; */
-    margin-top: 10rem;
-    background-color: palegreen;
+    margin-top: 8rem;
+    background-color: white;
     border-radius: 1.5rem;
     /* backdrop-filter: invert(1); */
+    box-shadow: 0 40px 80px -30px var(--veryDarkDesaturatedBlue);
 }
 
-.faq__column {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* flex-grow: 1;
-    flex-basis: 0;
-    overflow: hidden; */
-}
 
 /*****************/
 /* COLUMN 1 LEFT */
 /*****************/
 
-/* .imgWrapper {
-    position: absolute;
-    overflow: hidden;
-} */
-
 .faq__column--left {
     position: relative;
-    /* align-self: center; */
     background: url(/images/bg-pattern-mobile.svg) no-repeat;
-    background-size: 70%;
+    background-size: 75%;
     background-position: center top;
-    height: 140px;
+    height: 130px;
 }
-
-/* .faq__images {
-    position: absolute;
-    width: 100%;
-    background: url(/images/illustration-woman-online-mobile.svg) no-repeat;
-    background-position: center center;
-    background-size: 70%;
-    top: -115px;
-    height: 140%;
-} */
 
 .faq__images {
     position: absolute;
     width: 100%;
     background: url(/images/illustration-woman-online-mobile.svg) no-repeat;
     background-position: center center;
-    background-size: 70%;
-    top: -115px;
-    height: 140%;
+    background-size: 75%;
+    top: -150px;
+    height: 200%;
 }
-
-
-
-
-
-/* img#patternDesktop {
-    position: relative;
-    width: 800px;
-    left: -425px;
-    top: 0;
-}
-
-img#womanDesktop {
-    position: absolute;
-    width: 450px;
-    left: -80px;
-    top: 225px;
-}
-
-img#boxDesktop {
-    position: absolute;
-    width: 180px;
-    margin-left: -90px;
-    margin-bottom: -95px;
-} */
 
 /******************/
 /* COLUMN 2 RIGHT */
@@ -139,28 +79,26 @@ img#boxDesktop {
     justify-content: flex-start;
     height: 100%;
     z-index: 2;
-    background-color: paleturquoise;
-    /* border-top-right-radius: 1.5rem; */
-    /* border-bottom-right-radius: 1.5rem; */
 }
+
 .faq__column-wrapper {
     /* backdrop-filter: blur(10px); */
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 }
+
 .faq__header {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    /* margin-top: 2em;
-    margin-bottom: 0.5em; */
 }
 
 /******************/
 /* ACCORDION */
 /******************/
 
-.accordion-wrapper {
+.faq__accordion {
     max-width: 365px;
+    padding: 1.5rem 0 3rem 0;
 }
 .accordion {
     display: flex;
@@ -169,14 +107,15 @@ img#boxDesktop {
     background-color: unset;
     color: #444;
     cursor: pointer;
-    padding: 18px 0px;
+    padding: 1rem 0px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
     transition: 0.4s;
     line-height: 1rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
 }
   
 .active {
