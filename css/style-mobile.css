@@ -40,6 +40,8 @@ body {
 
 
 .faq__card {
+    display: flex;
+    flex-direction: column;
     margin-top: 8rem;
     background-color: white;
     border-radius: 1.5rem;
@@ -60,7 +62,7 @@ body {
     height: 130px;
 }
 
-.faq__images {
+.faq__image--woman {
     position: absolute;
     width: 100%;
     background: url(/images/illustration-woman-online-mobile.svg) no-repeat;
@@ -68,6 +70,10 @@ body {
     background-size: 75%;
     top: -150px;
     height: 200%;
+}
+
+.faq__image--box {
+    display: none;
 }
 
 /******************/
@@ -161,3 +167,61 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/******************/
+/* MEDIA QUERIES */
+/******************/
+
+
+@media screen and (min-width: 1000px) {
+    .faq__card {
+        flex-direction: row;
+        width: 900px;
+    }
+    .faq__column--left {
+        flex: auto;
+        position: relative;
+        background: url(/images/bg-pattern-desktop.svg) no-repeat;
+        background-size: 200%;
+        background-position: left -525px top -275px;
+        height: unset;
+
+    }
+    .faq__image--woman {
+        position: unset;
+        width: 100%;
+        background: url(/images/illustration-woman-online-desktop.svg) no-repeat;
+        background-position: left -80px center;
+        background-size: 100%;
+        height: 100%;
+    }
+    
+    .faq__image--box {
+        display: block;
+        position: absolute;
+        height: 50%;
+        width: 40%;
+        background: url(/images/illustration-box-desktop.svg) no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        left: -87px;
+        top: 160px;
+        z-index: 1;
+    }
+    .faq__column--right {
+        width: 450px;
+    }
+    .faq__column-wrapper {
+        padding: 4rem 1.5rem;
+    }
+    .faq__header {
+        text-align: left;
+    }
+    .faq__accordion {
+        max-width: 365px;
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    
+}
+
