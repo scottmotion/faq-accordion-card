@@ -145,7 +145,7 @@ body {
 
 .active:after {
     rotate: 90deg;
-    margin-right: 2px;
+    margin-right: -1px;
 }
 
 .panel {
@@ -192,34 +192,37 @@ body {
         position: unset;
         width: 100%;
         background: url(/images/illustration-woman-online-desktop.svg) no-repeat;
-        background-position: left -80px center;
+        background-position: left -80px top;
         background-size: 100%;
         height: 100%;
+        margin-top: 3.5rem;
     }
     
     .faq__image--box {
         display: block;
         position: absolute;
-        height: 50%;
-        width: 40%;
+        height: 175px;
+        width: 175px;
+        /* height: 50%;
+        width: 40%; */
         background: url(/images/illustration-box-desktop.svg) no-repeat;
         background-position: center center;
         background-size: 100%;
-        left: -87px;
-        top: 160px;
+        left: -5.4rem;
+        top: 11rem;
         z-index: 1;
     }
     .faq__column--right {
         width: 450px;
     }
     .faq__column-wrapper {
-        padding: 4rem 1.5rem;
+        padding: 4rem 1rem;
     }
     .faq__header {
         text-align: left;
     }
     .faq__accordion {
-        max-width: 365px;
+        max-width: 22rem;
         padding: 1.5rem 0 1.5rem 0;
     }
     
